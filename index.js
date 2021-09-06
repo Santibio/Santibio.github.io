@@ -147,7 +147,7 @@ const itemsHTML = (id, item) => {
 
     saveButton.addEventListener("click", () => {
         if (saveButton.className == "enabled") {
-            modificarObjeto(id, { nombre: li.textContent });
+            modificarObjeto(id, { listText: li.textContent });
             saveButton.classList.replace("enabled", "disable")
         }
     })
