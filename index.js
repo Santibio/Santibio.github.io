@@ -39,7 +39,7 @@ document.querySelector(".btn-new-item").addEventListener("click", () => {
             leerObjetos()
         }
     } else {
-        alert("No ingreso la terea")
+        alert("No added tasks")
     }
     document.getElementById("list-text").value = ""
 })
