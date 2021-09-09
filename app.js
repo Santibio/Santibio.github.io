@@ -164,3 +164,13 @@ buttonRemove.addEventListener("click", () => {
     leerObjetos()
 })
 
+inputListText.addEventListener("focus",()=>{
+    listContainer.classList.toggle("focus")
+})
+
+inputListText.addEventListener("blur",()=>{
+    listContainer.classList.toggle("focus")
+})
+
+
+
