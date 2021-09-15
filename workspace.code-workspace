@@ -1,9 +1,13 @@
 {
 	"folders": [
 		{
-			"name": "ToDoList",
 			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\Curso_Bootstrap\\dist"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Personal Porfolio"
+	}
 }
