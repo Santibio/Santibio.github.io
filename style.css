@@ -1,3 +1,43 @@
+body {
+  position: relative;
+}
+
+/* Nav-Bar */
+#navbar.sticky{
+  background-color: #212529 ;
+  padding: 10px 10px !important;
+  
+}
+.nav-colored { background-color:#000; }
+.nav-transparent { background-color:transparent;}
+.navbar{
+  transition: all 0.5s !important;
+}
+.nav-link{
+  transition: all 0.5s !important;
+}
+/* welcome-section */
+.welcome-section{
+  height: 50vh;
+}
+.btn{
+  transition: transform .4s ease-out;
+}
+.btn:active{
+  transform: scale(90%);
+}
+
+/* projects */
+
+.card{
+  cursor: pointer;
+  transition: transform .4s ease-out;
+
+}
+.card:hover{
+  transform: scale(95%);
+}
+
 
 #profile-img{
     border-radius: 50%;
@@ -11,10 +51,11 @@
   position: relative;
   box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
   padding: 30px;
+  
 }
 
 #contact .tittle{
-
+  text-transform: uppercase;
   text-align: center;
   padding-bottom: 20px;
   color: #000;
@@ -57,6 +98,14 @@
   border:none;
   cursor: pointer;
   text-transform: uppercase;
+  transition: all .3s
+  
+}
+.form-field .submit-btn:hover{
+  background-color: #dfdfdf;
+}
+.form-field .submit-btn:active{
+  transform: scale(90%);
 }
 
 
@@ -97,10 +146,10 @@ footer{
     transition: all 0.3s ease-out;
   }
 .wrapper .button:nth-child(1):hover .icon{
-    background: #0a66c2;
+    background: #0a66c2 ;
   }
 .wrapper .button:nth-child(2):hover .icon{
-    background: #161b22;
+    background: #161b22 ;
   }
 .wrapper .button:nth-child(3):hover .icon{
     background: #E1306C;
