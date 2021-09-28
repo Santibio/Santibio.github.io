@@ -125,7 +125,9 @@ label {
   transition: 0.2s ease all;
   pointer-events: none;
 }
-
+textarea{
+  resize: none !important;
+}
 .contact-form .submit-btn {
   display: inline-block;
   letter-spacing: 2px;
