@@ -43,13 +43,11 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 
-/* form.addEventListener('submit', (e) => {
-	if(fields.name && fields.email ){
-		
+form.addEventListener('submit', (e) => {
+	if(fields.name && fields.email){
 		form.reset();
 		;
 	} else {
-		e.preventDefault()
-		alert("no");
+		alert("No se completaron los campos requeridos");
 	}
-}); */
+});
