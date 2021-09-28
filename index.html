@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="custom.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/custom.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/5ac138c5f5.js" crossorigin="anonymous"></script>
 
@@ -52,7 +52,7 @@
     </header>
     <main>
      <section id="welcome-section" >
-      <div class="container pt-5 mb-5 p-3  d-flex welcome-section " >
+      <div class="container pt-5 mb-5 p-3  d-flex" >
         <div class="row">
         <div  class=" col-12 col-lg-6 d-flex flex-column justify-content-center  align-items-center align-items-lg-start">
           <h1 id="about">Hello, my name is Santiago</h1>
@@ -73,7 +73,6 @@
     <section id="projects">
       <div class="container-fluid " data-aos="fade-in">
       <div class="container my-5 py-4">
-      
         <div class="row">
           <div class="col-12">
             <h2 class="text-center mb-5 fs-2 projects-title">PROJECTS</h2>
@@ -82,18 +81,18 @@
         <div class="row">
           <div class="col-sm-12 col-md-4 col-lg-4 p-2">
             <div class="card">
-              <a data-bs-toggle="modal" data-bs-target="#modal-projects">
+              <a data-bs-toggle="modal" data-bs-target="#modal-projects-1">
               <img src="./images/project1.png" class="card-img-top" alt="...">
               <div class="card-body ">
                 <p class="card-text text-center">To Do List</p>
               </div>
             </a>
             </div>
-            <div class="modal fade" id="modal-projects" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+            <div class="modal fade" id="modal-projects-1" tabindex="-1" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title " id="modal1">To Do List</h5>
+                    <h5 class="modal-title " >To Do List</h5>
                     <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body  ">
@@ -114,10 +113,35 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4 p-2">
-            <div class="card" >
+            <div class="card"> 
+              <a data-bs-toggle="modal" data-bs-target="#modal-projects-2">
               <img src="./images/project1.png" class="card-img-top" alt="...">
               <div class="card-body ">
-                <p class="card-text text-center">To Do List</p>
+                <p class="card-text text-center">Calculadora</p>
+              </div>
+            </a>
+            </div>
+          </div>
+          <div class="modal fade" id="modal-projects-2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" >Calculadora</h5>
+                  <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body  ">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur numquam, iste facilis sint dicta iusto, cupiditate earum quasi dolores voluptate laborum corporis accusamus nobis? Fugiat sint laudantium perspiciatis! Quaerat, excepturi?</p>
+                  <p><strong>Tecnologias Utilizadas:</strong>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                  </ul></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                  <a href="https://santibio.github.io/ToDoList/" target="_blank" class="">Ir al projecto</a>
+                </div>
               </div>
             </div>
           </div>
@@ -160,32 +184,35 @@
       </div>
   </section>
   <section id = "contact-form">
-    <div class="container " data-aos="fade-in">
-      <div class="container w-75 " id="contact">
-        <h2 class="contact-me tittle col-12 fs-2 text-center ">Contact Me</h2>
+    <div class="container" data-aos="fade-in">
+      <form class="container w-100 w-sm-75" id="form" action="https://www.elformo.com/forms/7c3076e2-1b43-4732-a5fc-bb8b716aeeec" method="POST" >
+        <h2 class="contact-me tittle col-12 fs-2 text-center">Contact Me</h2>
         <div class="contact-form row">
-          <div class="form-field col-12  col-md-6">
-            <input type="text" id="name" class="input-text" placeholder="Name" required>
+          <div class="form-field col-12 col-md-6" id="group__name">
+            <input type="text" id="name" class="input-text" name="name" required>
+            <label>Name</label>
+            <p class="form__input-error correct">The name must be between 4 and 40 letters</p>
           </div>
-          <div class="form-field col-12 col-md-6">
-            <input type="email" id="email" class="input-text" placeholder="Email" required>
-            
+          <div class="form-field col-12 col-md-6" id="group__email">
+            <input type="email" id="email" class="input-text" name="email"  required>
+            <label>E-mail</label>
+            <p class="form__input-error correct">Invalid email</p>
           </div>
-          <div class="form-field col-12 col-lg-12">
-            <input type="text" id="message" class="input-text" placeholder="Message">
-            
+          <div class="form-field col-12 col-lg-12 ">
+            <input type="text" id="message" class="input-text"  required>
+            <label>Message</label>
           </div>
           <div class="form-field col-12 col-lg-12">
             <div class="d-flex"><input type="submit" value="submit" class="submit-btn m-auto"></div>
           </div>
         </div>
-      </div>
+      </form>
       </div>
     </section>
     </main>
     <footer>
       <div class="wrapper">
-          <div class="button ">
+          <div class="button">
             <div class="icon"><i class="fab fa-linkedin-in"></i></div>
             <a href="https://www.linkedin.com/in/santiago-bioletto-609aa4212/" class="gitHub">
             <span>Linkedin</span>
@@ -197,18 +224,6 @@
             <span>Git-Hub</span>
           </a>
           </div>
-          <!-- <div class="button">
-            <div class="icon"><i class="fa fa-twitter"></i></div>
-            <span>Twitter</span>
-          </div>
-          <div class="button">
-            <div class="icon"><i class="fa fa-instagram"></i></div>
-            <span>Instagram</span>
-          </div> -->
-          <!-- <div class="button">
-            <div class="icon"><i class="fa fa-youtube"></i></div>
-            <span>YouTube</span>
-          </div> -->
         </div>
         <div class="derechosreservados">
             <p>©</p>
@@ -224,6 +239,7 @@
   <script>
     AOS.init();
   </script>
-  <script src="main.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/form.js"></script>
   </body>
 </html>
