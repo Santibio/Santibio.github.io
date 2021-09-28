@@ -1,5 +1,6 @@
 const form = document.getElementById('form');
 const inputs = document.querySelectorAll('.contact-form input');
+const messege = document.getElementById("Message")
 
 const regex = {
 	name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -9,6 +10,7 @@ const regex = {
 const fields = {
 	name: false,
 	email: false,
+	messege: false
 }
 
 const validarFormulario = (e) => {
@@ -23,10 +25,12 @@ const validarFormulario = (e) => {
 }
 
 const validarCampo = (regex, input, field) => {
+	
 	if(regex.test(input.value)){
 		document.getElementById(`${field}`).classList.remove('incorrect-form');
 		document.getElementById(`${field}`).classList.add('correct-form');
 		document.querySelector(`#group__${field} .form__input-error`).classList.remove('incorrect');
+		
 		fields[field] = true;
 	} else {
 		document.getElementById(`${field}`).classList.add('incorrect-form');
@@ -34,7 +38,23 @@ const validarCampo = (regex, input, field) => {
 		document.querySelector(`#group__${field} .form__input-error`).classList.add('incorrect');
 		fields[field] = false;
 	}
+	
 }
+
+
+messege.addEventListener("keyup",(e)=>{
+	validarMessege()
+})
+
+const validarMessege = ()=>{
+	if(messege.value !== ""){
+		fields.messege = true
+	} else{
+		fields.messege = false
+	}
+
+}
+
 
 
 inputs.forEach((input) => {
@@ -45,12 +65,12 @@ inputs.forEach((input) => {
 
 
 form.addEventListener('submit', e => {
-	e.preventDefault()
-	if(fields.name && fields.email){
-		form.addEventListener('submit',()=>{
-			form.reset();
-		})
+	
+	if(fields.name && fields.email && fields.messege){
+			form.reset()
 	} else {
-		alert("No se completaron los campos requeridos");
+		alert("Please fill in the form correctly")
+		e.preventDefault()
 	}
+	
 });
