@@ -232,3 +232,6 @@ footer {
 .derechosreservados {
   margin-top: 40px;
 }
+.stop{
+  opacity: 0;
+}
