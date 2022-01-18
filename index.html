@@ -1,250 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Porfolio</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/custom.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/adaebb3056.js" crossorigin="anonymous"></script>
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
-  </head>
-  <body>
-    <header>
-      <div class="container-fluid navbar-light">
-        <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="navbar">
-          <div class="container-xxl ml-auto">
-            <span class="navbar-brand" href="#"><i class="far fa-moon" id="moon"></i></span>
-            <button
-              class="navbar-toggler" 
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#toggleMobilMenu"
-              aria-controls="toggleMobilMenu"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="toggleMobilMenu">
-              <ul class="navbar-nav ms-auto text-center ">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#w" data-aos="top-bottom">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#p">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#c"> Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div id="w">a</div>
-     <section id="welcome-section" >
-      <div class="container pt-5 mb-5 p-3  d-flex" >
-        <div class="row">
-        <div  class=" col-12 col-lg-6 d-flex flex-column justify-content-center  align-items-center align-items-lg-start">
-          <h1 id="about">Hello, my name is Santiago</h1>
-          <p class="mx-sm-5 mx-lg-0 welcome-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            est impedit Lorem ipsum dolor sit, amet consectetur adipisi
-          </p>
-          <a href="https://santibio.github.io/CV/" target="_blank" id="profile-link">
-            <button class="btn btn-light">Download CV</button>
-          </a>
-        </div>
-        <div class=" col-12 col-lg-6  d-flex f mt-3 mt-lg-0">
-          <img src="./images/profile-img.jpg" alt="" class="border  float-end mx-auto my-auto" width="200px" id="profile-img">
-        </div>
-      </div>
-      </div>
-   
-      <div id="p" class="stop">a</div>
-    </section>
-    
-    <section id="projects">
-      <div class="container-fluid " data-aos="fade-in">
-      <div class="container my-5 py-4">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="text-center mb-5 fs-2 projects-title">PROJECTS</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-4 p-2">
-            <div class="card">
-              <a data-bs-toggle="modal" data-bs-target="#modal-projects-1">
-              <img src="./images/project1.png" class="card-img-top" alt="...">
-              <div class="card-body ">
-                <p class="card-text text-center">To Do List</p>
-              </div>
-            </a>
-            </div>
-            <div class="modal fade" id="modal-projects-1" tabindex="-1" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title " >To Do List</h5>
-                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body  ">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur numquam, iste facilis sint dicta iusto, cupiditate earum quasi dolores voluptate laborum corporis accusamus nobis? Fugiat sint laudantium perspiciatis! Quaerat, excepturi?</p>
-                    <p><strong>Tecnologias Utilizadas:</strong>
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JS</li>
-                    </ul></p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
-                    <a href="https://santibio.github.io/ToDoList/" target="_blank" class="">Ir al projecto</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 p-2">
-            <div class="card"> 
-              <a data-bs-toggle="modal" data-bs-target="#modal-projects-2">
-              <img src="./images/project1.png" class="card-img-top" alt="...">
-              <div class="card-body ">
-                <p class="card-text text-center">Calculadora</p>
-              </div>
-            </a>
-            </div>
-          </div>
-          <div class="modal fade" id="modal-projects-2" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" >Calculadora</h5>
-                  <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body  ">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur numquam, iste facilis sint dicta iusto, cupiditate earum quasi dolores voluptate laborum corporis accusamus nobis? Fugiat sint laudantium perspiciatis! Quaerat, excepturi?</p>
-                  <p><strong>Tecnologias Utilizadas:</strong>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                  </ul></p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
-                  <a href="https://santibio.github.io/ToDoList/" target="_blank" class="">Ir al projecto</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 p-2">
-            <div class="card" >
-              <img src="./images/project1.png" class="card-img-top" alt="...">
-              <div class="card-body ">
-                <p class="card-text text-center">To Do List</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-4 p-2">
-            <div class="card" >
-              <img src="./images/project1.png" class="card-img-top" alt="...">
-              <div class="card-body ">
-                <p class="card-text text-center">To Do List</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-sm-12 col-md-4 col-lg-4 p-2">
-            <div class="card" >
-              <img src="./images/project1.png" class="card-img-top" alt="...">
-              <div class="card-body ">
-                <p class="card-text text-center">To Do List</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 p-2">
-            <div class="card" >
-              <img src="./images/project1.png" class="card-img-top" alt="...">
-              <div class="card-body ">
-                <p class="card-text text-center">To Do List</p>
-              </div>
-              <div id="c" class="stop">a</div> 
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-  <section id = "contact-form">
-    <div class="container" data-aos="fade-in">
-      <form class="container w-100 w-sm-75" id="form" action="https://www.elformo.com/forms/7c3076e2-1b43-4732-a5fc-bb8b716aeeec" method="post" >
-        <h2 class="contact-me tittle col-12 fs-2 text-center">Contact Me</h2>
-        <div class="contact-form row">
-          <div class="form-field col-12 col-md-6" id="group__name">
-            <input id="name" class="input-text"  name="name" type="name" required>
-            <label>Name</label>
-            <p class="form__input-error correct">The name must be between 4 and 40 letters</p>
-          </div>
-          <div class="form-field col-12 col-md-6" id="group__email">
-            <input id="email" class="input-text" name="email" type="email" required>
-            <label>E-mail</label>
-            <p class="form__input-error correct">Invalid email</p>
-          </div>
-          <div class="form-field col-12 col-lg-12 ">
-            <textarea id="message"  class="form-control" rows="3" name="message" type="message"></textarea>
-            <label>Message</label>
-          </div>
-          <div class="form-field col-12 col-lg-12">
-            <div class="d-flex"><input class="submit-btn m-auto" name="submit" type="Submit" value="submit" ></div>
-          </div>
-        </div>
-      </form>
-      </div>
-    </section>
-    </main>
-    <footer>
-      <div class="wrapper">
-          <div class="button">
-            <div class="icon"><i class="fab fa-linkedin-in"></i></div>
-            <a href="https://www.linkedin.com/in/santiago-bioletto-609aa4212/" class="gitHub">
-            <span>Linkedin</span>
-          </a>
-          </div>
-          <div class="button">
-            <div class="icon"><i class="fab fa-github"></i></div>
-            <a href="https://github.com/Santibio" class="linkedin">
-            <span>Git-Hub</span>
-          </a>
-          </div>
-        </div>
-        <div class="derechosreservados">
-            <p>©</p>
-        </div>
-  </footer>
-  
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-      integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="./js/main.js"></script>
-  <script src="./js/form.js"></script>
-  </body>
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+
+        
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+
+
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+
+
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                
+
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                
+
+            </section>
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
+
+
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                
+
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+
+
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+
+            
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="./assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="./assets/js/main.js"></script>
+    </body>
 </html>
