@@ -18,6 +18,8 @@
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
 
+    <!--==================== AOS ====================-->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
@@ -150,7 +152,7 @@
       </section>
 
       <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
+      <section class="about section" id="about" data-aos="fade-right">
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My introduction</span>
         <div class="about__container container grid">
@@ -189,7 +191,7 @@
       </section>
 
       <!--==================== SKILLS ====================-->
-      <section class="skills section" id="skills">
+      <section class="skills section" id="skills" data-aos="fade-left"> 
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">My tecnical level</span>
         <div class="skills__container container grid">
@@ -317,7 +319,7 @@
       </section>
 
       <!--==================== QUALIFICATION ====================-->
-      <section class="qualification section" id="qualification">
+      <section class="qualification section" id="qualification" data-aos="fade-right">
         <h2 class="section__title">Qualification</h2>
         <span class="section__subtitle">My personal journey</span>
         <div class="qualification__container container">
@@ -375,7 +377,7 @@
               <div class="qualification__data">
                 <div>
                   <h3 class="qualification__title">
-                    JavaScript Algorithms and Data Structures
+                    JavaScript Algorithms <br> and  Data Structures
                   </h3>
                   <span class="qualification__subtitle">Freecodecamp</span>
                   <div class="qualification__calendar">
@@ -471,7 +473,7 @@
       <!--       <section class="services section" id="services"></section> -->
 
       <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio">
+      <section class="portfolio section" id="portfolio" data-aos="fade-left">
         <h2 class="section__title">Portfolio</h2>
         <span class="section__subtitle">Most recent work</span>
 
@@ -565,7 +567,7 @@
       <!--  <section class="testimonial section"></section> -->
 
       <!--==================== CONTACT ME ====================-->
-      <section class="contact section" id="contact">
+      <section class="contact section" id="contact" data-aos="fade-right">
         <h2 class="section__title">Contact Me</h2>
         <span class="section__subtitle">Get in touch</span>
         <div class="contact__container container grid">
@@ -623,6 +625,12 @@
 </a>
     <!--==================== SWIPER JS ====================-->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <!--==================== AOS JS ====================-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
     <!--==================== MAIN JS ====================-->
     <script src="./assets/js/main.js"></script>
