@@ -456,11 +456,21 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
+  align-items: center;
 }
 
 .skills__name {
   font-style: var(--normal-font-size);
   font-weight: var(--font-medium);
+}
+.skills__img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+}
+.skills__img{
+  height: 50px;
 }
 
 .skills__close .skills__list {
