@@ -12,7 +12,10 @@
     />
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -27,7 +30,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav_item">
-              <a href="#home" class="nav__link">
+              <a href="#home" class="nav__link active-link">
                 <i class="uil uil-estate nav__icon"></i>Home
               </a>
             </li>
@@ -41,11 +44,11 @@
                 <i class="uil uil-file-alt nav__icon"></i>Skills
               </a>
             </li>
-            <li class="nav_item">
+            <!--  <li class="nav_item">
               <a href="#services" class="nav__link">
                 <i class="uil uil-briefcase-alt nav__icon"></i>Services
               </a>
-            </li>
+            </li> -->
             <li class="nav_item">
               <a href="#portfolio" class="nav__link">
                 <i class="uil uil-scenery nav__icon"></i>Porfolio
@@ -60,6 +63,8 @@
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
         <div class="nav__btns">
+           <!-- Dark mode -->
+           <i class="uil uil-moon change-theme" id="theme-button"></i>
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
           </div>
@@ -190,7 +195,7 @@
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">My tecnical level</span>
         <div class="skills__container container grid">
-          <div>
+  
             <!--==================== SKILLS 1====================-->
             <div class="skills__content skills__open">
               <div class="skills__header">
@@ -294,7 +299,10 @@
         <span class="section__subtitle">My personal journey</span>
         <div class="qualification__container container">
           <div class="qualification__tabs">
-            <div class="qualification__button button--flex qualification__active" data-target="#education">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
               <i class="uil uil-graduation-cap qualification__icon"></i
               >Education
             </div>
@@ -304,7 +312,11 @@
           </div>
           <div class="qualification__sections">
             <!--==================== QUALIFICATION CONTENT 1====================-->
-            <div class="qualification__content qualification__active" data-content id="education">
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
               <!--==================== QUALIFICATION 1====================-->
               <div class="qualification__data">
                 <div>
@@ -339,7 +351,9 @@
               <!--==================== QUALIFICATION 3====================-->
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">JavaScript Algorithms and Data Structures</h3>
+                  <h3 class="qualification__title">
+                    JavaScript Algorithms and Data Structures
+                  </h3>
                   <span class="qualification__subtitle">Freecodecamp</span>
                   <div class="qualification__calendar">
                     <i class="uil uil-calendar-alt"></i>
@@ -357,12 +371,14 @@
 
                 <div>
                   <span class="qualification__rounder"></span>
-                 <!--  <span class="qualification__line"></span> -->
+                  <!--  <span class="qualification__line"></span> -->
                 </div>
 
                 <div>
                   <h3 class="qualification__title">FullStack - Developer</h3>
-                  <span class="qualification__subtitle">Soy Henry bootcamp</span>
+                  <span class="qualification__subtitle"
+                    >Soy Henry bootcamp</span
+                  >
                   <div class="qualification__calendar">
                     <i class="uil uil-calendar-alt"></i>
                     2021-Present
@@ -376,7 +392,9 @@
               <div class="qualification__data">
                 <div>
                   <h3 class="qualification__title">Tecnical Assistant</h3>
-                  <span class="qualification__subtitle">Soy Henry bootcamp</span>
+                  <span class="qualification__subtitle"
+                    >Soy Henry bootcamp</span
+                  >
                   <div class="qualification__calendar">
                     <i class="uil uil-calendar-alt"></i>
                     2022-Present
@@ -388,19 +406,37 @@
                 </div>
               </div>
               <!--==================== QUALIFICATION 2====================-->
-              <div class="qualification__data" >
+              <div class="qualification__data">
                 <div></div>
                 <div>
                   <span class="qualification__rounder"></span>
-                  <!-- <span class="qualification__line"></span> -->
+                  <span class="qualification__line"></span>
                 </div>
                 <div>
                   <h3 class="qualification__title">FullStack SPA</h3>
-                  <span class="qualification__subtitle">Soy Henry bootcamp</span>
+                  <span class="qualification__subtitle"
+                    >Soy Henry bootcamp</span
+                  >
                   <div class="qualification__calendar">
                     <i class="uil uil-calendar-alt"></i>
                     2021-Present
                   </div>
+                </div>
+              </div>
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Open source collaboration
+                  </h3>
+                  <span class="qualification__subtitle">Github</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022-Present
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
                 </div>
               </div>
             </div>
@@ -409,28 +445,160 @@
       </section>
 
       <!--==================== SERVICES ====================-->
-      <section class="services section" id="services"></section>
+      <!--       <section class="services section" id="services"></section> -->
 
       <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio"></section>
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="portfolio__container container swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="/assets/img/portfolio1.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Food SPA FullStack</h3>
+                <p class="portfolio__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                  dolorum dolorem dicta sunt ipsam temporibus soluta. Vel,
+                  excepturi? Dignissimos vero blandit
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 2====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="/assets/img/portfolio2.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Food SPA FullStack</h3>
+                <p class="portfolio__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                  dolorum dolorem dicta sunt ipsam temporibus soluta. Vel,
+                  excepturi? Dignissimos vero blandit
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 3====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="/assets/img/portfolio3.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Food SPA FullStack</h3>
+                <p class="portfolio__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                  dolorum dolorem dicta sunt ipsam temporibus soluta. Vel,
+                  excepturi? Dignissimos vero blandit
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!--==================== PROJECT IN MIND ====================-->
-      <section class="project section"></section>
+      <!--    <section class="project section"></section> -->
 
       <!--==================== TESTIMONIAL ====================-->
-      <section class="testimonial section"></section>
+      <!--  <section class="testimonial section"></section> -->
 
       <!--==================== CONTACT ME ====================-->
-      <section class="contact section" id="contact"></section>
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle">+54 351-6563546</span>
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-envelope-alt contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle"
+                  >santiagobioletto@gmail.com</span
+                >
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">Córdoba, Argentina</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Santiago</h1>
+            <span class="footer__subtitle">Fullstack developer</span>
+          </div>
+          <ul class="footer__links">
+            <li>
+              <a href="#skills" class="footer__link">Skills</a>
+            </li>
+            <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <!--==================== SCROLL TOP ====================-->
-
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="uil uil-arrow-up scrollup__icon"></i>
+</a>
     <!--==================== SWIPER JS ====================-->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="./assets/js/main.js"></script>
