@@ -314,6 +314,7 @@ img {
 }
 .home__scroll {
   display: none;
+  margin-top: 2rem;
 }
 .home__scroll-button {
   color: var(--first-color);
@@ -871,6 +872,9 @@ img {
   }
   .home__social{
     transform: translateX(-6rem);
+  }
+  .skills__container{
+    grid-template-columns: repeat(3,1fr);
   }
   .portfolio__content{
     column-gap: 5rem;
